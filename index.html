@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML-Start test task</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+           <a href="/" class="logo">
+            <div class="logo_img"></div>
+            <div class="logo_text">
+                <span class="name">Никита</span>
+                <span class="surname">Вязников</span>
+            </div>
+           </a>
+
+           <!-- Навигация -->
+            <nav class="menu">
+                <ul class="menu_items">
+                    <li class="menu_item">
+                        <a href="#about" class="menu_item_link">Обо мне</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#skills" class="menu_item_link">Навыки</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#portfolio" class="menu_item_link">Портфолио</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#contacts" class="menu_item_link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Переключатель темы -->
+            <div class="header_options">
+                <div class="switch">
+                    <div class="switch_button"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- END .HEADER -->
+
+    <!-- Main content -->
+
+    <!-- Кнопка открытия popup -->
+    <a href="#popup-open" class="cta_button"><i class="ti ti-phone"></i></a>
+        
+        <!-- POPUP -->
+        <div class="popup" id="popup-open">
+            <a href="#" class="popup_bg"></a>
+            <div class="popup_content" role="dialog" aria-modal="true">
+                <h2>Всплывающее окно</h2>
+                <p class="col_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente eos, corrupti repellendus suscipit harum quasi beatae ut. Quibusdam est ad perferendis repudiandae harum tempora vitae eaque architecto unde molestias? 
+                </p>
+                <a href="#" class="popup_close">x</a>
+            </div>
+            <a href="#" class="popup_close">x</a>
+        </div> 
+
+        <!-- ABOUT ME -->
+        <section id="about" class="about_me">
+            <div class="indent container">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="about_me_photo">
+                            <picture>
+                                <!-- разные форматы и размеры через media для адаптива-->
+                                <source type="image/avif" srcset="images/avif/avatar-low.avif" media="(max-width: 576px)">
+                                <source type="image/avif" srcset="images/avif/avatar-medium.avif" media="(max-width: 768px)">
+                                <source type="image/avif" srcset="images/avif/avatar-high.avif">
+                        
+                                <source type="image/webp" srcset="images/webp/avatar-low.webp" media="(max-width: 576px)">
+                                <source type="image/webp" srcset="images/webp/avatar-medium.webp" media="(max-width: 768px)">
+                                <source type="image/webp" srcset="images/webp/avatar-high.webp">
+                        
+                                <source type="image/jpeg" srcset="images/avatar-low.jpeg" media="(max-width: 576px)">
+                                <source type="image/jpeg" srcset="images/avatar-medium.jpeg" media="(max-width: 768px)">
+                                <source type="image/jpeg" srcset="images/avatar-high.jpeg">
+                                        
+                                <img src="img/avif/avatar.avif" width="500" loading="lazy" alt="Фото">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <h2>Обо мне</h2>
+                        <div class="about_me_description">
+                            <p>Привет, я Никита Вязников</p>
+                            <p>Учусь и развиваюсь в IT</p>
+                            <p>Студент ВоГУ</p>
+                            <p>Направление: Информационные системы и технологии, 4 курс</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim tenetur velit, sed corporis excepturi harum inventore recusandae quis iste alias maxime nisi molestias quas cumque et, minus obcaecati nostrum.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni minus, tenetur aperiam omnis nihil corporis, maxime magnam qui consequuntur autem nostrum, at illo earum rem deserunt nobis! Placeat, dignissimos accusamus?</p>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END .ABOUT_MME -->
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills">
+            <div class="indent container">
+                <h2>Навыки</h2>
+                <div class="row">
+                    <div class="col-3 skill">
+                        <div class="skill_logo">
+                            <img src="/images/label-html.svg" alt="HTML" width="100" loading="lazy">
+                        </div>
+                        <h3 class="skill_name">HTML</h3>
+                    </div>
+                    <div class="col-3 skill">
+                        <div class="skill_logo">
+                            <img src="/images/label-css.svg" alt="CSS" width="100" loading="lazy">
+                        </div>
+                        <h3 class="skill_name">CSS</h3>
+                    </div>
+                    <div class="col-3 skill">
+                        <div class="skill_logo">
+                            <img src="/images/label-js.svg" alt="JS" width="100" loading="lazy">
+                        </div>
+                        <h3 class="skill_name">JavaScript</h3>
+                    </div>
+                    <div class="col-3 skill">
+                        <div class="skill_logo">
+                            <img src="/images/label-react.svg" alt="React" width="100" loading="lazy">
+                        </div>
+                        <h3 class="skill_name">React</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END .SKILLS -->
+
+        <!-- .PORTFOLIO_ALL-->
+        <section id="portfolio" class="portfolio_all">
+            <div class="indent container">
+                <h2>Мои крайние работы</h2>
+                <div class="row">
+
+                    <div class="col-4 portfolio">
+                        <div class="portfolio_photo">
+                            <img src="/images/portfolio-1.jpg" alt="Portfolio 1" loading="lazy">
+                        </div>
+                        <h3 class="portfolio_name">My_pizza</h3>
+                        <p class="portfolio_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi architecto molestias, laboriosam minus possimus in blanditiis fuga minima nulla nam voluptas. Mollitia, magni. Debitis ab velit beatae! Velit, harum.</p>
+                    </div>
+
+                    <div class="col-4 portfolio">
+                        <div class="portfolio_photo">
+                            <img src="/images/portfolio-2.jpg" alt="Portfolio 2" loading="lazy">
+                        </div>
+                        <h3 class="portfolio_name">Слайдер «Nike»</h3>
+                        <p class="portfolio_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur libero, architecto hic quibusdam vitae dignissimos assumenda optio doloremque eaque praesentium beatae ratione itaque non quam. Doloribus reiciendis est porro.</p>
+                    </div>
+
+                    <div class="col-4 portfolio">                        
+                        <div class="portfolio_photo">
+                            <img src="/images/portfolio-3.jpg" alt="Portfolio 3" loading="lazy">
+                        </div>
+                        <h3 class="portfolio_name">Сайт «Nike»</h3>
+                        <p class="portfolio_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt officia officiis tempore, totam nesciunt fugit accusamus odit amet! Reprehenderit sint at deserunt ducimus veritatis eaque autem, non iusto praesentium.</p>
+                    </div>
+
+                    <div class="col-4 portfolio">                        
+                        <div class="portfolio_photo">
+                            <img src="/images/portfolio-4.jpg" alt="Portfolio 4" loading="lazy">
+                        </div>
+                        <h3 class="portfolio_name">Форма Регистрации</h3>
+                        <p class="portfolio_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perspiciatis doloremque repellendus magni obcaecati voluptate, iure harum atque facere unde exercitationem sit omnis, at tempora ipsa repellat similique fuga inventore.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- END .PORTFOLIO_ALL-->
+
+
+        <!-- CONTACTS-->
+        <address id="contacts" class="contacts">
+            <div class="indent container">
+            <h2 class="message_text">Напишите мне</h2>
+            <div class="row">
+
+                <!-- Telegram -->
+                <div class="col-4">
+                    <div class="message">
+                        <div class="message_buttons">
+                            <a href="https://t.me/vyaznikovn" target="_blank" class="button btn_telegram">
+                            <i class="ti ti-brand-telegram"></i>
+                            <span>Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="col-4">
+                    <div class="message">
+                        <div class="message_buttons">
+                            <a href="https://github.com/nvyaznikov" target="_blank" class="button btn_github">
+                            <i class="ti ti-brand-github"></i>
+                            <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-4">
+                    <div class="message">
+                        <div class="message_buttons">
+                            <a href="mailto:strixforever45@gmail.com" target="_blank" class="button btn_email">
+                            <i class="ti ti-mail"></i>
+                            <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </address>
+        <!-- END .CONTACTS-->
+
+    <!-- END MAIN CONTENT-->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer_info">© 2025-2026. Сайт ML-Start Test Task. Frontend. Мы используем cookies для сбора обезличенных персональных данных. Оставаясь на сайте, вы соглашаетесь на сбор таких данных.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
